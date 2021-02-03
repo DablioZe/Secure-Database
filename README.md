@@ -41,7 +41,7 @@ db.add("count", 49);
 <h3 id="all-method">.all()</h3>
 
 ```javascript
-const db = require("secured-db");
+const db = require("secure-db");
 
 // Returns all existing data.
 
@@ -82,7 +82,6 @@ var data = db.all()
 const db = require("secure-db")();
 
 // Returns data for an element.
-
 
 db.set("my_car", "Ferrari");
 db.set("members", 24);
