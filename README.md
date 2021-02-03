@@ -25,7 +25,7 @@ $ npm install secure-db
 <h3 id="add-method">.add(data_name, value)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Add a string or a number in front of the existing value.
 
@@ -59,7 +59,7 @@ var my_items = db.all({startsWith: "my"});
 <h3 id="delete-method">.delete(data_name)</h3>
 
 ```javascript
-const db  require("secure-db");
+const db  require("secure-db")();
 
 // Completely deletes some data that has been stored.
 
@@ -79,7 +79,7 @@ var data = db.all()
 <h3 id="get-method">.get(data_name)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Returns data for an element.
 
@@ -97,7 +97,7 @@ const money = db.get("my_money");
 <h3 id="has-method">.has(data_name)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Checks if a data exists and returns a boolean.
 
@@ -115,7 +115,7 @@ db.has("shop");
 <h3 id="push-method">.push(data_name, element)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Adds an element if the data value is of type array.
 
@@ -139,7 +139,7 @@ bl = db.get("blacklist");
 <h3 id="reset-method">.reset()</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Deletes all data from the database.
 
@@ -159,7 +159,7 @@ data = db.all();
 <h3 id="set-method">.set(data_name, value)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Defines a new value for the data excluding the previous one.
 
@@ -175,7 +175,7 @@ money = db.get("money");
 <h3 id="splice-method">.splice(data_name, value)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Removes an element from an array.
 
@@ -193,7 +193,7 @@ names = db.get("names");
 <h3 id="sub-method">.sub(data_name, number)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Subtract a number from the existing value.
 
@@ -210,7 +210,7 @@ money = db.get("money");
 <h3 id="sum-method">.sum(data_name, number)</h3>
 
 ```javascript
-const db = require("secure-db");
+const db = require("secure-db")();
 
 // Adds a number with an existing value. 
 
